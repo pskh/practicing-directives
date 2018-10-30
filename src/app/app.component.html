@@ -2,6 +2,6 @@
 <p *ngIf="showSecret">That details</p>
 <div 
     *ngFor="let logItem of log"
-    [ngStyle] = "{'backgroundColor': log.length >= 5 ? 'blue' : 'white'}"
-    [ngClass] = "{'white-text': log.length >= 5}"
+    [ngStyle] = "{'backgroundColor': logItem >= 5 ? 'blue' : 'white'}"
+    [ngClass] = "{'white-text': logItem >= 5}"
 >{{ logItem }}</div>
